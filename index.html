@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rohit & Manju · Wedding Reception · 13 December 2026</title>
+<meta name="description" content="Join us to celebrate the wedding reception of Rohit and Manju on 13 December 2026 at Agneyam Grand Resort, Kozhikode.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rohit &amp; Manju · Wedding Reception">
+<meta property="og:description" content="Join us on 13 December 2026 at Agneyam Grand Resort, Kozhikode.">
+<meta property="og:url" content="https://rohitporoli.github.io/invitation/">
+<meta property="og:image" content="https://rohitporoli.github.io/invitation/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rohit and Manju invite you to their wedding reception, 13 December 2026">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rohitporoli.github.io/invitation/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf0;--sky:#dcebfb;--navy:#2349a0;--text:#2b4a8c;--btn:#2f5ea8;
+  --script:'Mr Dafoe','Brush Script MT',cursive;--sans:'Nunito Sans',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden}
+body{background:var(--cream);color:var(--text);font-family:var(--sans);font-size:1.05rem;line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
+.art{fill:none;stroke:var(--navy);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+
+/* slides */
+.page{position:fixed;inset:0;display:flex;padding:max(2rem,env(safe-area-inset-top)) 1.5rem 7rem;overflow-y:auto;
+  opacity:0;visibility:hidden;transform:translateX(24px);transition:opacity .45s ease,transform .45s ease,visibility 0s .45s}
+.page.on{opacity:1;visibility:visible;transform:none;transition:opacity .45s ease,transform .45s ease}
+.cream{background:var(--cream)}.sky{background:var(--sky)}
+.inner{margin:auto;width:100%;max-width:1000px}
+h1,h2{font-family:var(--script);font-weight:400;color:var(--navy);line-height:1.2}
+h2{font-size:clamp(2.6rem,6.5vw,3.9rem);margin-bottom:1rem}
+p{max-width:34em}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center}
+.split .art{width:100%;max-height:340px}
+.btn{display:inline-block;padding:.55rem 1.5rem;background:var(--btn);color:#fff;text-decoration:none;font-size:.85rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:.3rem .3rem .3rem 0;transition:background .2s}
+.btn:hover{background:var(--navy)}
+
+/* hero */
+.hero .inner{text-align:center;max-width:760px}
+.meta{position:absolute;top:max(1.4rem,env(safe-area-inset-top));left:1.5rem;right:1.5rem;display:flex;justify-content:space-between;gap:1rem;font-size:.85rem;font-weight:700;color:var(--navy)}
+.hero .palm{width:150px;margin:0 auto .4rem;display:block}
+.hero h1{font-size:clamp(3.8rem,13vw,7.4rem);line-height:1.05}
+.hero .sub{font-size:1.5rem;color:var(--navy);font-style:italic;margin:.2rem auto 1.2rem}
+.hero .small{font-size:.85rem;margin:.9rem auto 0}
+
+/* photo */
+.photo{padding:1.2rem 1.2rem 6.2rem;background:var(--cream)}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:18px;display:block}
+
+/* details */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:1.8rem;text-align:center}
+.three .art{width:72px;height:72px;margin:0 auto .6rem;display:block}
+.three h3{font-family:var(--script);font-weight:400;font-size:1.9rem;color:var(--navy);line-height:1.3}
+.three p{font-size:.95rem;margin:0 auto}
+.center{text-align:center}.center h2{margin-bottom:.2rem}
+
+/* timeline */
+.tl{border-top:1px solid var(--navy);margin-top:1.2rem;max-width:480px}
+.tl div{display:flex;gap:1.5rem;padding:.8rem 0;border-bottom:1px solid var(--navy)}
+.tl b{min-width:5.2rem;color:var(--navy)}
+.deco{display:flex;gap:1rem;justify-content:center;align-items:center}
+.deco .art{width:90px}
+
+/* faq */
+.faq h4{color:var(--navy);font-size:1.05rem;margin-top:1rem}
+.faq p{font-size:.98rem}
+.pile{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:center}
+.pile .art{width:100%;max-height:150px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 2.5rem;margin-top:1.4rem}
+.contact b{color:var(--navy)}
+.contact a{text-decoration:none}
+
+
+/* rsvp */
+.rsvp{max-width:630px;text-align:center}
+.rsvp .ask{font-size:1.3rem;margin:0 auto 1.6rem}
+.wavebg{position:absolute;left:-4%;bottom:5.5rem;width:108%;height:44px;stroke:var(--navy);opacity:.15;pointer-events:none}
+#rsvp{text-align:left}
+#rsvp label{display:block;font-size:1.15rem;font-weight:700;color:var(--navy);margin:1.1rem 0 .45rem}
+#rsvp input,#rsvp select{width:100%;padding:.85rem 1.2rem;font:inherit;font-size:1.15rem;color:var(--text);background:#fff;border:1px solid var(--navy);border-radius:14px}
+#rsvp input::placeholder{color:rgba(43,74,140,.55)}
+#rsvp select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' fill='none' stroke='%232349a0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 2l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1.1rem center;padding-right:2.8rem}
+#rsvp input:focus-visible,#rsvp select:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+#rsvp button{display:block;margin:1.8rem auto 0;padding:.9rem 2.3rem;border:0;border-radius:999px;background:var(--btn);color:#fff;font:inherit;font-size:1.15rem;font-weight:700;cursor:pointer;transition:background .2s}
+#rsvp button:hover{background:var(--navy)}
+#rsvp button:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
+
+/* button */
+.ctrl{position:fixed;left:0;right:0;bottom:0;z-index:10;display:flex;justify-content:center;padding:1rem 1rem max(1.4rem,env(safe-area-inset-bottom));pointer-events:none}
+.arrow{pointer-events:auto;width:56px;height:56px;border-radius:50%;border:2px solid var(--navy);background:var(--cream);color:var(--navy);cursor:pointer;display:grid;place-items:center;transition:background .2s,color .2s}
+.arrow:hover{background:var(--navy);color:#fff}
+.arrow svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#next .ic-refresh{display:none}
+#next.last .ic-next{display:none}#next.last .ic-refresh{display:block}
+
+/* animated pictures: each drawing sketches itself in when its page opens, then moves gently */
+.art{stroke-dasharray:1 2}
+.art{--draw:draw 2.4s cubic-bezier(.5,0,.3,1) var(--d,0s) both}
+.page.on .art{animation:var(--draw)}
+.page.on .a-palm{animation:var(--draw),sway 6s ease-in-out calc(2.4s + var(--d,0s)) infinite;transform-origin:50% 92%}
+.page.on .a-couple{animation:var(--draw),sway 7s ease-in-out calc(2.4s + var(--d,0s)) infinite;transform-origin:50% 100%}
+.page.on .a-sun{animation:var(--draw),spin 40s linear calc(2.4s + var(--d,0s)) infinite}
+.page.on .a-pin{animation:var(--draw),bob 2s ease-in-out calc(2.4s + var(--d,0s)) infinite}
+.page.on .a-cake{animation:var(--draw),bob 4s ease-in-out calc(2.4s + var(--d,0s)) infinite}
+.page.on .a-wave{animation:var(--draw),drift 9s ease-in-out calc(2.4s + var(--d,0s)) infinite}
+.three>div:nth-child(2){--d:.35s}.three>div:nth-child(3){--d:.7s}
+@keyframes draw{from{stroke-dashoffset:1.1}to{stroke-dashoffset:0}}
+@keyframes sway{0%,100%{transform:rotate(0)}25%{transform:rotate(2.5deg)}75%{transform:rotate(-2.5deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(3%)}}
+@media (prefers-reduced-motion:reduce){.page .art,.page.on .art{animation:none!important;stroke-dasharray:none}}
+
+@media(max-width:700px){
+  .split,.contact,.three{grid-template-columns:1fr}
+  .split .art{max-height:150px;order:-1}
+  .three{gap:1.3rem}
+  .three .art{width:56px;height:56px}
+  .meta{flex-direction:column;gap:0}
+  .hero .palm{width:110px}
+  .hero .inner{padding-top:2.2rem}
+}
+@media (prefers-reduced-motion:reduce){.page,.page.on{transition:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="palm" viewBox="0 0 120 100"><path pathLength="1" d="M14 84Q40 68 62 76Q86 68 106 84"/><path pathLength="1" d="M60 76C58 58 62 42 70 26"/><path pathLength="1" d="M70 26C55 12 38 14 26 28M70 26C60 8 80 2 94 12M70 26C86 14 102 24 106 40M70 26C52 24 44 36 46 46M70 26C82 28 92 40 88 52"/><path pathLength="1" d="M18 92q6-5 12 0t12 0t12 0t12 0t12 0t12 0t12 0"/></symbol>
+<symbol id="sun" viewBox="0 0 100 100"><circle pathLength="1" cx="50" cy="50" r="17"/><path pathLength="1" d="M50 12v11M50 77v11M12 50h11M77 50h11M23 23l8 8M69 69l8 8M77 23l-8 8M31 69l-8 8"/></symbol>
+<symbol id="pin" viewBox="0 0 100 100"><path pathLength="1" d="M50 92C28 64 24 52 24 40a26 26 0 0 1 52 0C76 52 72 64 50 92z"/><circle pathLength="1" cx="50" cy="40" r="9"/></symbol>
+<symbol id="star" viewBox="0 0 100 100"><polygon pathLength="1" points="50,10 61.8,35.8 89.9,39 69,58.2 74.7,86 50,72 25.3,86 31,58.2 10.1,39 38.2,35.8"/><circle pathLength="1" cx="50" cy="50" r="1.5"/><circle pathLength="1" cx="50" cy="38" r="1.5"/><circle pathLength="1" cx="40" cy="55" r="1.5"/><circle pathLength="1" cx="60" cy="55" r="1.5"/></symbol>
+<symbol id="shell" viewBox="0 0 100 100"><path pathLength="1" d="M14 44C18 14 82 14 86 44L50 86z"/><path pathLength="1" d="M50 86L28 26M50 86L40 20M50 86V18M50 86L60 20M50 86L72 26"/><path pathLength="1" d="M42 86h16v7H42z"/></symbol>
+<symbol id="flop" viewBox="0 0 80 140"><path pathLength="1" d="M40 6C60 6 66 30 62 60C60 90 64 110 58 128C54 140 26 140 22 128C16 110 22 90 18 60C14 30 20 6 40 6z"/><path pathLength="1" d="M40 46L24 74M40 46L56 74"/></symbol>
+<symbol id="rings" viewBox="0 0 110 80"><circle pathLength="1" cx="40" cy="48" r="22"/><circle pathLength="1" cx="68" cy="48" r="22"/><path pathLength="1" d="M54 14l6 8-6 8-6-8z"/></symbol>
+<symbol id="cake" viewBox="0 0 120 170"><path pathLength="1" d="M60 40c-9-12-21 0-9 9l9 9 9-9c12-9 0-21-9-9z"/><path pathLength="1" d="M44 62h32v24H44zM30 86h60v30H30zM16 116h88v32H16z"/><path pathLength="1" d="M30 100q10 10 20 0t20 0t20 0M16 130q11 11 22 0t22 0t22 0t22 0"/><path pathLength="1" d="M8 148h104"/></symbol>
+<symbol id="mail" viewBox="0 0 120 90"><rect pathLength="1" x="6" y="14" width="108" height="66" rx="4"/><path pathLength="1" d="M6 16L60 54L114 16M6 78L46 46M114 78L74 46"/><path pathLength="1" d="M60 42c-4-6-10 0-4 5l4 4 4-4c6-5 0-11-4-5z"/></symbol>
+<symbol id="wave" viewBox="0 0 160 40"><path pathLength="1" d="M0 14q10-14 20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0M0 30q10-14 20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0"/></symbol>
+<symbol id="couple" viewBox="0 0 200 220"><circle pathLength="1" cx="62" cy="42" r="14"/><path pathLength="1" d="M48 38c4-12 24-12 28 0"/><path pathLength="1" d="M46 70C46 62 80 62 80 70L84 150H42z"/><path pathLength="1" d="M54 62l8 10 8-10M52 150l-2 56M74 150l2 56"/><path pathLength="1" d="M80 84C96 96 108 94 124 84"/><circle pathLength="1" cx="132" cy="52" r="13"/><path pathLength="1" d="M120 46C98 58 102 100 108 132"/><path pathLength="1" d="M122 68L142 68L150 108C170 150 178 190 184 206L82 206C96 190 114 150 122 108z" fill="var(--bg,#dcebfb)"/><path pathLength="1" d="M94 206q10-10 20 0M128 206q10-10 20 0M156 206q10-10 20 0"/></symbol>
+</defs></svg>
+
+<main>
+<!-- 1 · WELCOME -->
+<section class="page cream hero on" aria-label="Welcome">
+  <div class="meta"><span>13 December 2026</span><span>Agneyam Grand Resort, Kozhikode</span></div>
+  <div class="inner">
+    <svg class="art palm" aria-hidden="true"><use href="#palm"/></svg>
+    <h1>Rohit &amp; Manju</h1>
+    <p class="sub" style="max-width:none">invite you to their wedding reception</p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Agneyam+Grand+Resort+Bilathikkulam+Kozhikode" target="_blank" rel="noopener">Directions</a>
+    <a class="btn" href="tel:+917736065008">Call us</a>
+    <p class="small" style="margin-inline:auto" id="days">Sunday, 4:30 – 9:00 PM</p>
+  </div>
+</section>
+
+<!-- 2 · PHOTO (add photo.jpg next to index.html; this page hides itself if the file is missing) -->
+<section class="page photo" id="photo" aria-label="Photo">
+  <img src="photo.jpg" alt="Rohit and Manju" onerror="document.getElementById('photo').remove()">
+</section>
+
+<!-- 3 · FAMILIES -->
+<section class="page sky" aria-label="Families" style="--bg:#dcebfb">
+  <div class="inner split">
+    <div>
+      <h2>Together with our families</h2>
+      <p>A celebration of love, laughter and happily ever after. We request the honor of your gracious presence and blessings with family to celebrate the wedding reception of our son <b>Rohit</b>, son of Prasobh P and Nisha K K, with <b>Manju</b>, daughter of Manoj Kumar P V &amp; Rajitha P P.</p>
+      <p style="margin-top:.8rem;font-size:.95rem">Hosted by Mr Prasobh P &amp; Mrs Nisha K K, Poroli House.</p>
+    </div>
+    <svg class="art" viewBox="0 0 200 220" aria-hidden="true"><use href="#couple"/></svg>
+  </div>
+</section>
+
+<!-- 4 · RECEPTION -->
+<section class="page cream" aria-label="Reception details">
+  <div class="inner center">
+    <h2>Our Wedding Reception</h2>
+    <div class="three">
+      <div><svg class="art" viewBox="0 0 120 100" aria-hidden="true"><use href="#palm"/></svg><h3>Date</h3><p>Sunday, 13 December 2026</p></div>
+      <div><svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#sun"/></svg><h3>Time</h3><p>4:30 PM to 9:00 PM. Come any time in between.</p></div>
+      <div><svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#pin"/></svg><h3>Venue</h3><p>Agneyam Grand Resort, near Vikas Nagar Housing Colony, Bilathikkulam, Kozhikode</p></div>
+    </div>
+    <p style="margin:1.6rem auto 0"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Agneyam+Grand+Resort+Bilathikkulam+Kozhikode" target="_blank" rel="noopener">Open in Maps</a></p>
+  </div>
+</section>
+
+<!-- 7 · BLESSINGS -->
+<section class="page sky" aria-label="Blessings" style="--bg:#dcebfb">
+  <div class="inner split">
+    <svg class="art" viewBox="0 0 120 170" aria-hidden="true" style="max-height:300px"><use href="#cake"/></svg>
+    <div>
+      <h2>Your blessings</h2>
+      <p style="font-weight:700;color:var(--navy)">Your presence is more than enough!</p>
+      <p style="margin-top:.6rem">There is no gift we need beyond your blessings and your company. We cannot wait to celebrate with you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · RSVP (sends a WhatsApp message to 94978 44919) -->
+<section class="page cream" aria-label="RSVP">
+  <svg class="art wavebg" viewBox="0 0 160 40" preserveAspectRatio="none" aria-hidden="true"><use href="#wave"/></svg>
+  <div class="inner rsvp">
+    <h2>RSVP</h2>
+    <p class="ask">Will you join us?</p>
+    <form id="rsvp" autocomplete="off">
+      <label for="nm">Your name</label>
+      <input id="nm" type="text" placeholder="Name" required maxlength="80">
+      <label for="ans">Your answer</label>
+      <select id="ans">
+        <option value="Yes">Can’t wait, we’ll be there</option>
+        <option value="No">Sorry, we can’t make it</option>
+      </select>
+      <button type="submit">Send my RSVP on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<div class="ctrl">
+  <button class="arrow" id="next" aria-label="Next page">
+    <svg class="ic-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+    <svg class="ic-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg>
+  </button>
+</div>
+
+<script>
+(function(){
+  var next=document.getElementById('next');
+  var cur=document.querySelector('.page.on');
+  function pages(){return [].slice.call(document.querySelectorAll('.page'))}
+  function refresh(){
+    var p=pages(), last=(p.indexOf(cur)===p.length-1);
+    next.classList.toggle('last',last);
+    next.setAttribute('aria-label',last?'Back to the first page':'Next page');
+  }
+  next.addEventListener('click',function(){
+    var p=pages(), i=p.indexOf(cur), n=p[(i+1)%p.length];
+    cur.classList.remove('on'); n.classList.add('on'); n.scrollTop=0; cur=n; refresh();
+  });
+  refresh();
+  // name each drawing by the symbol it uses so it gets its own motion
+  [].forEach.call(document.querySelectorAll('svg.art use'),function(u){
+    var svg=u.ownerSVGElement; if(svg)svg.classList.add('a-'+u.getAttribute('href').slice(1));
+  });
+
+  // RSVP -> WhatsApp (94978 44919)
+  var form=document.getElementById('rsvp');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('nm').value.trim();
+    var yes=document.getElementById('ans').value==='Yes';
+    var msg=yes
+      ? 'Hey, this is '+name+'. I will be there.'
+      : 'Hey, this is '+name+'. Sorry, I can’t make it.';
+    var url='https://wa.me/919497844919?text='+encodeURIComponent(msg);
+    // Open WhatsApp in a new tab; if the browser blocks that, open it in this tab instead
+    var w=window.open(url,'_blank');
+    if(w){try{w.opener=null}catch(err){}}
+    else{window.location.href=url}
+  });
+
+  // Days to go until 13 Dec 2026, 4:30 PM India time (UTC+5:30)
+  var t=new Date('2026-12-13T16:30:00+05:30').getTime()-Date.now();
+  var el=document.getElementById('days');
+  if(t>0){var d=Math.ceil(t/864e5);el.textContent=d+(d===1?' day':' days')+' to go · Sunday, 4:30 – 9:00 PM'}
+  else if(t>-5*36e5){el.textContent='Today we celebrate!'}
+  else{el.textContent='Thank you for celebrating with us'}
+})();
+</script>
+</body>
+</html>
